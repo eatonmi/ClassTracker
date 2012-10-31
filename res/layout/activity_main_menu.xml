@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/mainMenu_viewGradesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mainMenu_editAssignmentsButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/mainMenu_editAssignmentsButton"
+        android:layout_marginTop="79dp"
+        android:text="@string/mainMenu_viewGradesButtonText" />
+
+    <Button
+        android:id="@id/mainMenu_editAssignmentsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/mainMenu_viewGradesButton"
+        android:layout_marginTop="34dp"
+        android:text="@string/mainMenu_editAssignmentsButtonText" />
+
+    <Button
+        android:id="@+id/mainMenu_editClassesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mainMenu_editAssignmentsButton"
+        android:layout_alignRight="@id/mainMenu_editAssignmentsButton"
+        android:layout_below="@id/mainMenu_editAssignmentsButton"
+        android:layout_marginTop="34dp"
+        android:text="@string/mainMenu_editClassesButtonText" />
+
+    <Button
+        android:id="@+id/mainMenu_resetDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mainMenu_editClassesButton"
+        android:layout_alignRight="@id/mainMenu_editClassesButton"
+        android:layout_below="@id/mainMenu_editClassesButton"
+        android:layout_marginTop="32dp"
+        android:text="@string/mainMent_resetDataButtonText" />
+
+</RelativeLayout>

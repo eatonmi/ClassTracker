@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/classEntry_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/classEntry_titleTextView_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/classEntry_nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/classEntry_title"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/classEntry_nameTextView_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/classEntry_NameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/classEntry_nameTextView"
+        android:layout_alignBottom="@+id/classEntry_nameTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/classEntry_nameTextView"
+        android:ems="10"
+        android:inputType="text" />
+
+    <ListView
+        android:id="@+id/classEntry_typeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/classEntry_completeButton"
+        android:layout_alignLeft="@+id/classEntry_nameTextView"
+        android:layout_below="@+id/classEntry_NameEditText" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/classEntry_completeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/classEntry_NameEditText"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@+id/classEntry_title"
+        android:text="@string/done" />
+
+    <Button
+        android:id="@+id/classEntry_addTypeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/classEntry_completeButton"
+        android:layout_alignBottom="@+id/classEntry_completeButton"
+        android:layout_alignLeft="@+id/classEntry_typeList"
+        android:text="@string/classEntry_addNewButton_text" />
+
+</RelativeLayout>
